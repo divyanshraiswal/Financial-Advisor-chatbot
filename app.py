@@ -30,8 +30,6 @@ bedrock_embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1",clien
 def data_ingestion():
     loader=PyPDFDirectoryLoader("data")
     documents=loader.load()
-
-    # - in our testing Character split works better with this PDF data set
     text_splitter=RecursiveCharacterTextSplitter(chunk_size=10000,
                                                  chunk_overlap=1000)
     
