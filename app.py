@@ -2,13 +2,12 @@ import os
 import boto3
 import streamlit as st
 
-## We will be suing Titan Embeddings Model To generate Embedding
+# We will be suing Titan Embeddings Model To generate Embedding
 
 from langchain_aws import BedrockEmbeddings
-from langchain_community.llms.bedrock import Bedrock
 from langchain_aws import BedrockLLM
 
-## Data Ingestion
+# Data Ingestion
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFDirectoryLoader
