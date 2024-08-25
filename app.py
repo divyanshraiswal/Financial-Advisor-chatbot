@@ -10,7 +10,6 @@ from langchain_aws import BedrockLLM
 
 ## Data Ingestion
 
-import numpy as np
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
